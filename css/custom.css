@@ -1,0 +1,17 @@
+.social-link
+{
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.center {
+    justify-content: center;
+}
+
+#google-form {
+    position: relative;
+    top: -50px;
+  }
+  
