@@ -1,81 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Обналичивание скин CSGO</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Google fonts-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="/css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="/css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="/img/favicon.png">
-  </head>
-  <body>
-    <section class="page-holder position-relative d-flex justify-content-between flex-column" style="background: url(/img/bayan3.png);">
-      <div class="overlay"></div>
-      <div class="container position-relative z-index-20 pt-3">
-        <ul class="list-inline text-center">
-          <li class="list-inline-item"><a class="social-link social-link-whatsapp" href="https://wa.me/+77002000467/?text=Здравствуйте,я хочу продать скины CSGO"><i class="fab fa-whatsapp"></i></a></li>
-          <li class="list-inline-item"><a class="social-link social-link-instagram" href="https://www.instagram.com/bayannuradil"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      </div>
-      <div class="container text-center text-white position-relative mt-4 mb-5">
-        <h1 class="text-shadow mb-5 text-uppercase">РЕАЛЬНЫЕ ДЕНЬГИ ЗА ВАШИ СКИНЫ CS:GO МОМЕНТАЛЬНО <br>Услуга обналичивание баланса Steam</h1>
-        <p class="h3 text-shadow text-uppercase">Вывести KASPI сразу за 50% от стоимости</p>
-        <div class="countdown mt-5" id="countdown">
-          <div class="row">
-            <p>Пожалуйста, свяжитесь с нами через <a href="https://wa.me/+77002000467/?text=Здравствуйте,я хочу продать скины CSGO">Whatapp</a> или <a href="https://www.instagram.com/bayannuradil">Instagram</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container text-white text-center z-index-20" id="google-form">
-        <p class="h3 mb-4 text-shadow fw-normal"> Заполните форму, чтобы получить профессиональную оценку стоимости.</p>
-        <div class="row">
-          <div class="col-lg-5 mx-auto">
-            <form class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center">
-              <div class="center">
-                <button class="btn btn-primary" id="subscribeBtn">Заполнить </button>
-            </div>
-            </form>
-          </div>
-        </div>
-      </div>
-      <footer class="py-4 w-100 text-sm text-white z-index-20 position-relative">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 text-center text-sm-start">
-              <p>&copy; Bayan CSGO</p>
-            </div>
-            <div class="col-sm-6 text-center text-sm-end"><a target="_blank" href="http://www.github.com/arcbomi" title="arcbomi" class="text-reset">Автор: Arbomi</a></div>
-          </div>
-        </div>
-      </footer>
-    </section>
-    <!-- JavaScript files-->
-    <script>
-      document.getElementById("subscribeBtn").addEventListener("click", function() {
-          window.open("https://forms.gle/LZCrfiSQr5gYuraJ6", "_blank");
-      });
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-      var userLanguage = navigator.language || navigator.userLanguage;
-/*
-      if (userLanguage.includes("zh") && !window.location.href.includes("zh")) {
-          window.location.href = "/zh/index.html";
-      } 
-     else if(userLanguage.includes("ru") && !window.location.href.includes("ru")){
-          window.location.href = "index.html";
-      }
-      */
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="simple_todo">
+  <link rel="apple-touch-icon" href="https://arcbomi.github.io/todo/icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://arcbomi.github.io/todo/favicon.png"/>
+
+  <title>simple_todo</title>
+  <link rel="manifest" href="https://arcbomi.github.io/todo/manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1740601736";
   </script>
-    
-    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  </body>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="https://arcbomi.github.io/todo/flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
 </html>
